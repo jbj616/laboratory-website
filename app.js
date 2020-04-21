@@ -27,6 +27,18 @@ app.get("/members", (req, res) => {
   res.render("page/MembersPage");
 });
 
+app.get("/research", (req, res) => {
+  res.render("page/ResearchPage");
+});
+
+app.get("/publication", (req, res) => {
+  res.render("page/PublicationPage");
+});
+
+app.get("/career", (req, res) => {
+  res.render("page/CareerPage");
+});
+
 //에러 처리
 var errorHandler = expressErrorHandler({
   static: {
