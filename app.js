@@ -20,31 +20,7 @@ app.set("views", __dirname + "/views");
 app.use("/", static(path.join(__dirname, "views/page")));
 
 app.get("/", (req, res) => {
-  res.redirect("/recruitment");
-});
-
-app.get("/about", (req, res) => {
-  res.render("page/main");
-});
-
-app.get("/portfolio", (req, res) => {
-  res.render("page/portfolio");
-});
-
-app.get("/winter", (req, res) => {
-  res.render("page/winter_dev");
-});
-
-app.get("/recruitment", (req, res) => {
-  res.render("page/recruitment");
-});
-
-app.get("/faq", (req, res) => {
-  res.render("page/faq");
-});
-
-app.get("/invitation", (req, res) => {
-  res.render("page/invitation");
+  res.render("page/HomePage");
 });
 
 //에러 처리
