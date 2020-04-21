@@ -23,6 +23,10 @@ app.get("/", (req, res) => {
   res.render("page/HomePage");
 });
 
+app.get("/members", (req, res) => {
+  res.render("page/MembersPage");
+});
+
 //에러 처리
 var errorHandler = expressErrorHandler({
   static: {
