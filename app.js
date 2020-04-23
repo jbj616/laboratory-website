@@ -1,3 +1,5 @@
+/** @format */
+
 //module
 const express = require("express");
 const http = require("http");
@@ -37,6 +39,10 @@ app.get("/publication", (req, res) => {
 
 app.get("/career", (req, res) => {
   res.render("page/CareerPage");
+});
+
+app.get("/newspaper", (req, res) => {
+  res.render("page/NewsPage");
 });
 
 //에러 처리
