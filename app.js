@@ -25,28 +25,50 @@ app.get("/", (req, res) => {
   res.render("page/HomePage");
 });
 
-app.get("/members", (req, res) => {
-  res.render("page/MembersPage");
+//members tab
+app.get("/alumni", (req, res) => {
+  res.render("page/Member/AlumniPage");
 });
 
+app.get("/members", (req, res) => {
+  res.render("page/Member/MembersPage");
+});
+
+app.get("/professor", (req, res) => {
+  res.render("page/Member/ProfessorPage");
+});
+
+//Research Page
 app.get("/field", (req, res) => {
-  res.render("page/ResearchFieldPage");
+  res.render("page/Research/FieldPage");
 });
 
 app.get("/method", (req, res) => {
-  res.render("page/ResearchMethodPage");
+  res.render("page/Research/MethodPage");
 });
 
-app.get("/publication", (req, res) => {
-  res.render("page/PublicationPage");
+app.get("/project", (req, res) => {
+  res.render("page/Research/ProjectPage");
 });
 
+//Career Tab
 app.get("/career", (req, res) => {
   res.render("page/CareerPage");
 });
 
+//NewsPage
 app.get("/newspaper", (req, res) => {
   res.render("page/NewsPage");
+});
+
+//patents
+app.get("/patent", (req, res) => {
+  res.render("page/PatentsPage");
+});
+
+//publication
+app.get("/publication", (req, res) => {
+  res.render("page/PublicationPage");
 });
 
 //에러 처리
