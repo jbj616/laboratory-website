@@ -29,8 +29,12 @@ app.get("/members", (req, res) => {
   res.render("page/MembersPage");
 });
 
-app.get("/research", (req, res) => {
-  res.render("page/ResearchPage");
+app.get("/field", (req, res) => {
+  res.render("page/ResearchFieldPage");
+});
+
+app.get("/method", (req, res) => {
+  res.render("page/ResearchMethodPage");
 });
 
 app.get("/publication", (req, res) => {
