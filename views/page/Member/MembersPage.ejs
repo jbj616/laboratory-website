@@ -16,43 +16,52 @@
           <% include ../../include/header.ejs %>
 
           <!-- Content -->
-          <section style="margin-top: -20px;">
-            <h3>We are currently looking for enthusiastic graduate students (M.S., Ph.D.).</h3>
-            <h3>We welcome applicants from diverse backgrounds (e.g., CS, EE, Biology, Mathematics, Physics,...) who are interested in ‘Bioinformatics, Systems Biology, Medical informatics, Machine learning, Data mining’</h3>
-            <h3>Please drop your CV to syyoo@jnu.ac.kr.</h3>
-            <hr>
-            <h1>Members</h1>
+          <section>
+            <header class="main">
+              <h1>Members</h1>
+            </header>
+          
             <h2 style="text-align: center;">Senior researcher</h2>
+              
+            <h2>Hyungkoo Kim</h2>
+            <div class="row">
+              <div class="col-3 col-12-small">
+                <img src="/images/professor.jpg" height="200px">
+              </div>
+
+              <div class="col-8 col-12-small">
+                <ul style="list-style-type: none; ">
+                  <h3>Experiences</h3>
+                  <ul>
+                    <li>
+                      Senior Researcher, 2019 – Present<br>School of Electronics and Computer Engineering, Chonnam National University
+                    </li>
+                    <li>
+                      Senior software developer, 2018-2019<br>DEVSISTERS Corporation
+                    </li>
+                    <li>
+                      Senior software developer, 2016-2018<br>GAMEBIL COM2US Platform
+                    </li>
+                    <li class="more">
+                      Senior software developer, 2012 – 2015<br>Netmarble Games Corporation
+                    </li>
+                    <li class="more">
+                      Senior Researcher, 2008 – 2012<br>Nable communications
+                    </li>
+                    <li class="more">
+                      Junior software developer, 2005 – 2007<br>Mobiletop Corporation
+                    </li>
+                    <li class="more">
+                      Junior software developer, 2000 -2004<br>NETS Corporation
+                    </li>
+                    
+                    <button id="moreButton" onclick="more()">more</button>
+                  </ul>
+              </div>
+            </div>
             
-            <h3>Hyungkoo Kim</h3>
-            <ul style="list-style-type: none; ">
-              <li><strong>Experiences</strong></li>
-              <ul>
-                <li>
-                  Senior Researcher, 2019 – Present<br>School of Electronics and Computer Engineering, Chonnam National University
-                </li>
-                <li>
-                  Senior software developer, 2018-2019<br>DEVSISTERS Corporation
-                </li>
-                <li>
-                  Senior software developer, 2016-2018<br>GAMEBIL COM2US Platform
-                </li>
-                <li>
-                  Senior software developer, 2012 – 2015<br>Netmarble Games Corporation
-                </li>
-                <li>
-                  Senior Researcher, 2008 – 2012<br>Nable communications
-                </li>
-                <li>
-                  Junior software developer, 2005 – 2007<br>Mobiletop Corporation
-                </li>
-                <li>
-                  Junior software developer, 2000 -2004<br>NETS Corporation
-                </li>
-              </ul>
-              <li>
-                <strong>Publications (Book)</strong>
-              </li>
+            
+              <h3>Publications (Book)</h3>
               <ul>
                 <li>
                   BREW & WIPI 모바일 프래그래밍 (가메출판사 2005)
@@ -61,7 +70,7 @@
                   TCP/IP 소켓과 시스템 프로그래밍 (가메출판사 2005)
                 </li>
               </ul>
-              <li><strong>Research strengths</strong></li>
+              <h3>Research strengths</h3>
               <ul>
                 <li>Various platform development skill including mobile and server</li>
                 <li>Guide Platform linkage</li>
@@ -111,4 +120,25 @@
     <!-- Scripts -->
     <% include ../../include/script.ejs %>
   </body>
+
+  <style>
+    .more{
+      font-size: 0px;
+    }
+  </style>
+
+  <script>
+    function more(){
+      
+      var moreText = document.getElementsByClassName("more");
+      
+      for(var i=0; i<moreText.length; i++){
+        moreText[i].style.fontSize = "17px"
+      }
+
+      var moreBtn = document.getElementById("moreButton");
+      moreBtn.style.display = "none";
+      
+    }
+  </script>
 </html>

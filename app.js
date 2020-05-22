@@ -26,6 +26,10 @@ app.get("/", (req, res) => {
 });
 
 //members tab
+app.get("/people", (req, res) => {
+  res.render("page/Member/PeoplePage");
+});
+
 app.get("/members", (req, res) => {
   res.render("page/Member/MembersPage");
 });
