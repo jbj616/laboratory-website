@@ -2,7 +2,7 @@
 
 ### 사용전 필요한 툴
 
-- node.js
+- [node.js](https://nodejs.org/ko/download/)
 
 
 
@@ -10,6 +10,7 @@
 
 ```bash
 git clone http://https://github.com/jbj616/laboratory-website.git
+cd laboratory-website
 npm install 
 npm start
 ```
@@ -28,7 +29,7 @@ npm start
   - Member
     - Prefessor / Member
   - Research
-    - Field / Method / Projects
+    - Method / Projects
   - Home
   - Introduce
   - Lecture
