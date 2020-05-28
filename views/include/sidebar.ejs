@@ -9,17 +9,17 @@
         <ul>
           <li><a href="/">Home</a></li>
           <li style="display: inline-block; width: 100%; height: 50px;">
-            <a href="/People" style="font-size: 15px;  display: inline-block; width: 20%;">People</a>
-            <span class="opener" style="width: 77%; display: inline-block"></span>
+            <a href="/People" style="font-size: 14px;  display: inline-block; width: 20%;">People</a>
+            <span class="opener" id = "sidebar-people"style="display: none;"></span>
             <ul>
               <li><a href="/professor">Professor</a></li>
               <li><a href="/members">Members</a></li>
             </ul>
           </li>
           <li>
-            <span class="opener">Research</span>
+            <a href="/field" style="font-size: 14px;  display: inline-block; width: 20%;">Research</a>
+            <span class="opener" id = "sidebar-research" style="display: none;"></span>
             <ul>
-              <li><a href="/field">Fields</a></li>
               <li><a href="/method">Methods</a></li>
               <li><a href="/project">Projects</a></li>
             </ul>
@@ -45,7 +45,6 @@ Detailed Address. College of Engineering 6, 713
         </ul>
       </section>
 
-     
       <!-- Footer -->
       
       <% include ./footer.ejs %>
