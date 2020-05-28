@@ -3,6 +3,7 @@
 ### 사용전 필요한 툴
 
 - [node.js](https://nodejs.org/ko/download/)
+- [Git](https://gitforwindows.org/)
 
 
 
